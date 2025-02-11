@@ -1,0 +1,19 @@
+
+ 1. import morgan module. it is a logger middleware. it logs the request details in the console. It is used for debugging purpose. It is a third party middleware. It is not a part of express module. It is a separate module.
+
+    const morgan = require("morgan");
+ 
+
+2. use express.json() middleware. It parses the incoming request with JSON payloads. It is built-in middleware. It is used to parse the incoming request with JSON payloads. It is used to parse the incoming request object and store it in req.body object. It is used to handle the POST request. It is used to handle the form data.
+
+    app.use(express.json()); 
+
+3. use express.urlencoded() middleware. It parses the incoming request with urlencoded payloads. It is built-in middleware. It is used to parse the incoming request with urlencoded payloads. It is used to parse the incoming request object and store it in req.body object. It is used to handle the POST request. It is used to handle the form data.
+
+    app.use(express.urlencoded({ extended: true }));
+
+4. // use express.static() middleware. It serves the static files. It is built-in middleware. It is used to serve the static files such as images, CSS files, JavaScript files, etc. It is used to serve the static files from the public folder.
+
+    app.use(express.static("public")); 
+
+

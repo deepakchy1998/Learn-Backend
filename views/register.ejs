@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background: linear-gradient(135deg, #667eea, #764ba2);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.container {
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				width: 300px;
+				text-align: center;
+			}
+			h2 {
+				margin-bottom: 1rem;
+			}
+			.input-group {
+				margin-bottom: 1rem;
+				text-align: left;
+			}
+			label {
+				display: block;
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+			input {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-size: 1rem;
+			}
+			.btn {
+				background: #667eea;
+				color: white;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				font-size: 1rem;
+				cursor: pointer;
+				width: 100%;
+			}
+			.btn:hover {
+				background: #5a67d8;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Register</h2>
+			<form action="/register" method="POST">
+				<div class="input-group">
+					<label for="username">Username</label>
+					<input type="text" id="userName" name="userName" />
+
+				</div>
+				<div class="input-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" />
+				</div>
+				<div class="input-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" />
+				</div>
+				<button type="submit" class="btn">Register</button>
+			</form>
+		</div>
+	</body>
+</html>
